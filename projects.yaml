@@ -1,0 +1,4 @@
+projects:
+  gpio_demo_frdmk64f:
+    - records/frdm_k64f.yaml
+    - records/cmsis.yaml
