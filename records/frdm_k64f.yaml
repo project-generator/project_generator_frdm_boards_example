@@ -4,6 +4,7 @@ common:
     includes:
         - gpio_demo_frdmk64f
         - cmsis/MK64F12
+        - cmsis/core_cm4.h
     sources:
         - gpio_demo_frdmk64f
         - cmsis/MK64F12

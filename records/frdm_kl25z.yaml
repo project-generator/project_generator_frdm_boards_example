@@ -4,6 +4,7 @@ common:
     includes:
         - gpio_demo_frdmkl25z
         - cmsis/MKL25Z4
+        - cmsis/core_cm0plus.h
     sources:
         - gpio_demo_frdmkl25z
         - cmsis/MKL25Z4

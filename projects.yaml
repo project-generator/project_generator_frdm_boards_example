@@ -1,11 +1,8 @@
 projects:
   gpio_demo_frdmk64f:
     - records/frdm_k64f.yaml
-    - records/cmsis.yaml
   gpio_demo_frdmkl25z:
     - records/frdm_kl25z.yaml
-    - records/cmsis.yaml
   gpio_demo_frdmkl46z:
     - records/frdm_kl46z.yaml
-    - records/cmsis.yaml
     
