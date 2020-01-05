@@ -30,7 +30,6 @@ tool_specific:
                 - -fmessage-length=0 
                 - -fno-builtin 
                 - -mthumb
-                - -mcpu=cortex-m4
                 - -MMD
                 - -MP
             standard_libraries:
