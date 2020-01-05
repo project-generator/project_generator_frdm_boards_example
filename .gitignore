@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# progen generated files
+generated_projects
+*.log
