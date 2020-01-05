@@ -6,7 +6,9 @@ Requirements:
  - make
  - GCC ARM
 
- Just use:
+This only shows Makefiles for GCC ARM. Porting this to different toolchain or IDE should be simple as long as progen supports it. How to do it? Add toolchain specific files for a target to add armcc6 support for example.
 
-1. `progen generate` - this will generate all project files
-2. Run `make` for a generated example, or use `progen build` to build the example 
+Generate/build examples:
+
+1. `progen generate -t make_gcc_arm` - this will generate all project files
+2. Run `make` for a generated example, or use `progen build` to build all examples (with generation) 
