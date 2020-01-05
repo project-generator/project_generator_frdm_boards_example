@@ -1,0 +1,37 @@
+common:
+    target:
+      - frdm-kl46z
+    includes:
+        - gpio_demo_frdmkl46z
+        - cmsis/MKL46Z4
+        - cmsis/core_cm0plus.h
+    sources:
+        - gpio_demo_frdmkl46z
+        - cmsis/MKL46Z4
+    macros:
+        - NDEBUG 
+tool_specific:
+    gcc_arm:
+        linker_file:
+            - cmsis/MKL46Z4/MKL46Z4.ld
+        misc:
+            c_flags:
+                - -g 
+                - -ggdb
+                - -Os 
+                - -Wall 
+                - -fno-strict-aliasing
+                - -ffunction-sections 
+                - -fdata-sections 
+                - -fno-exceptions 
+                - -fno-delete-null-pointer-checks
+                - -fmessage-length=0 
+                - -fno-builtin 
+                - -mthumb
+                - -MMD
+                - -MP
+            standard_libraries:
+                - m
+                - gcc
+                - c
+                - nosys

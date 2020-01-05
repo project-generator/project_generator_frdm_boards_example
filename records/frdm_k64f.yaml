@@ -1,0 +1,40 @@
+common:
+    target:
+      - frdm-k64f
+    includes:
+        - gpio_demo_frdmk64f
+        - cmsis/MK64F12
+        - cmsis/core_cm4.h
+    sources:
+        - gpio_demo_frdmk64f
+        - cmsis/MK64F12
+    macros:
+        - NDEBUG 
+tool_specific:
+    gcc_arm:
+        linker_file:
+            - cmsis/MK64F12/MK64F12.ld
+        misc:
+            c_flags:
+                - -mfpu=fpv4-sp-d16
+                - -mfloat-abi=softfp
+                - -g 
+                - -ggdb
+                - -Os 
+                - -Wall 
+                - -fno-strict-aliasing
+                - -ffunction-sections 
+                - -fdata-sections 
+                - -fno-exceptions 
+                - -fno-delete-null-pointer-checks
+                - -fmessage-length=0 
+                - -fno-builtin 
+                - -mthumb
+                - -mcpu=cortex-m4
+                - -MMD
+                - -MP
+            standard_libraries:
+                - m
+                - gcc
+                - c
+                - nosys
