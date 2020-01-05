@@ -11,9 +11,9 @@ common:
         - NDEBUG 
 tool_specific:
     gcc_arm:
+        linker_file:
+            - cmsis/MK64F12/MK64F12.ld
         misc:
-            linker_file:
-                - cmsis/MK64F12/MK64F12.ld
             c_flags:
                 - -mfpu=fpv4-sp-d16
                 - -mfloat-abi=softfp
